@@ -1,0 +1,183 @@
+body{
+    background-color: #c96c6d;
+}
+.ghost{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 100px auto 0 auto;
+   }
+   .body{
+    position: absolute;
+    height: 30%;
+    width: 25%;
+    background-color: white;
+    left: 40%;
+    top:  33%;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+      }
+      .body-copy{
+    position: absolute;
+    height: 28%;
+    width: 22%;
+    background-color: white;
+    left: 40%;
+    top:  33%;
+    z-index: 1;
+}
+.head{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -50%;
+    background-color: white;
+    border-radius: 90px;
+    
+}
+.eye-right{
+    position: absolute;
+    height: 22%;
+    width: 20%;
+    right: 22%;
+    top: 40%;
+    background-color: black;
+    border-radius: 50%;
+}
+.eye-left{
+    position: absolute;
+    height: 22%;
+    width: 20%;
+    left: 22%;
+    top: 40%;
+    background-color: black;
+    border-radius: 50%;
+}
+.mouth{
+    position: absolute;
+    height: 26%;
+    width: 25%;
+    left: 39%;
+    top: 70%;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2
+}
+.mouth2{
+    position: absolute;
+    height: 26%;
+    width: 80%;
+    left: 10%;
+    top: 70%;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2
+}
+
+.down-bubble{
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    top:70%;
+}
+
+.bubble-1{
+    position: absolute;
+    height: 100%;
+    width:25%;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  
+    animation-name: bubble;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+  
+}
+.bubble-2{
+    position: absolute;
+    height: 100%;
+    width:25%;
+    left: 25%;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+ 
+    animation-name: bubble;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+ 
+}
+.bubble-3{
+    position: absolute;
+    height: 100%;
+    width:25%;
+    right: 25%;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    animation-name: bubble;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+
+}
+.bubble-4{
+    position: absolute;
+    height: 100%;
+    width:25%;
+    right: 0;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+ 
+    animation-name: bubble;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+ 
+}
+.boo {
+
+
+color: white;
+    float:left;
+    width:40px;
+    padding-left:  680px;
+    font-size:30px;
+    font-weight: bold;
+    }
+.boo2{
+    color: white;
+    float:left;
+  padding-left: 580px;
+    
+    font-size:30px;
+    font-weight: bold;
+}
+
+@keyframes bubble{
+    0%{
+        top: 0;
+    }
+    50%{
+        top:20%;
+    }
+     100%{
+        top: 0;
+    }
+}
+@keyframes floating{
+    0%{top: 33%;}
+    30%{top: 40%;}
+    50%{top:33%;}
+    70%{top:25%;}
+    100%{top:33%;}
+}
+
+
